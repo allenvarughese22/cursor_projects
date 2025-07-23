@@ -1,0 +1,225 @@
+/* Tesla/Nike Style "What I Do" Section */
+
+.what-i-do {
+  background: var(--primary-white);
+  padding: var(--space-32) 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.what-i-do::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  z-index: 1;
+}
+
+.what-i-do .container {
+  position: relative;
+  z-index: 10;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: var(--space-16);
+}
+
+.section-title {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  color: var(--primary-black);
+  margin-bottom: var(--space-4);
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+
+.section-subtitle {
+  font-size: var(--text-xl);
+  color: var(--gray-600);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.services-grid {
+  margin-bottom: var(--space-16);
+}
+
+.service-card {
+  background: var(--primary-white);
+  border: 1px solid var(--gray-200);
+  border-radius: 16px;
+  padding: var(--space-8);
+  text-align: center;
+  transition: all var(--transition-normal);
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--gradient-accent);
+  transform: scaleX(0);
+  transition: transform var(--transition-normal);
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl);
+  border-color: var(--accent-red);
+}
+
+.service-card:hover::before {
+  transform: scaleX(1);
+}
+
+.service-icon {
+  width: 80px;
+  height: 80px;
+  background: var(--gradient-accent);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--space-6);
+  color: var(--primary-white);
+  font-size: var(--text-2xl);
+  transition: all var(--transition-normal);
+}
+
+.service-card:hover .service-icon {
+  transform: scale(1.1);
+  box-shadow: var(--shadow-lg);
+}
+
+.service-title {
+  font-size: var(--text-xl);
+  color: var(--primary-black);
+  margin-bottom: var(--space-4);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.service-description {
+  color: var(--gray-600);
+  font-size: var(--text-base);
+  line-height: 1.6;
+  margin-bottom: var(--space-6);
+}
+
+.service-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-2);
+  color: var(--gray-700);
+  font-size: var(--text-sm);
+  font-weight: 500;
+}
+
+.feature-icon {
+  color: var(--accent-red);
+  font-size: var(--text-xs);
+  flex-shrink: 0;
+}
+
+/* CTA Section */
+.cta-section {
+  text-align: center;
+  background: var(--primary-black);
+  color: var(--primary-white);
+  padding: var(--space-16);
+  border-radius: 16px;
+  margin-top: var(--space-16);
+}
+
+.cta-title {
+  font-size: var(--text-3xl);
+  margin-bottom: var(--space-6);
+  text-transform: uppercase;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: var(--space-4);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-buttons .btn-primary {
+  background: var(--accent-red);
+  color: var(--primary-white);
+}
+
+.cta-buttons .btn-secondary {
+  background: transparent;
+  color: var(--primary-white);
+  border: 2px solid var(--primary-white);
+}
+
+.cta-buttons .btn-secondary:hover {
+  background: var(--primary-white);
+  color: var(--primary-black);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .what-i-do {
+    padding: var(--space-16) 0;
+  }
+  
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+  
+  .section-title {
+    font-size: clamp(2rem, 5vw, 3rem);
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cta-buttons button {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-card {
+    padding: var(--space-6);
+  }
+  
+  .service-icon {
+    width: 60px;
+    height: 60px;
+    font-size: var(--text-xl);
+  }
+  
+  .service-title {
+    font-size: var(--text-lg);
+  }
+  
+  .cta-title {
+    font-size: var(--text-2xl);
+  }
+} 

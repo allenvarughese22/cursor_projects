@@ -4,6 +4,10 @@ import {
   FaAward, FaBook, FaTools, FaCog, FaIndustry, FaCertificate 
 } from 'react-icons/fa';
 import './Education.css';
+import comptiaA from '../comptia/a+ logo.png';
+import comptiaNetwork from '../comptia/network +.jpg';
+import comptiaSecurity from '../comptia/security+.png';
+import googleIT from '../comptia/google it.png';
 
 const Education = () => {
   const educationData = [
@@ -68,22 +72,32 @@ const Education = () => {
 
   const certifications = [
     {
-      name: "Technical Support Certification",
-      issuer: "Fanshawe College",
+      name: "CompTIA A+",
+      issuer: "CompTIA",
       date: "2024",
-      description: "Comprehensive technical support and troubleshooting certification"
+      description: "Hardware and software troubleshooting",
+      logo: comptiaA
     },
     {
-      name: "Software Testing Fundamentals",
-      issuer: "Fanshawe College",
+      name: "CompTIA Network+",
+      issuer: "CompTIA",
       date: "2024",
-      description: "Core software testing methodologies and quality assurance practices"
+      description: "Network infrastructure and troubleshooting",
+      logo: comptiaNetwork
     },
     {
-      name: "Network Administration",
-      issuer: "Fanshawe College",
+      name: "CompTIA Security+",
+      issuer: "CompTIA",
       date: "2024",
-      description: "Network configuration, security, and administration skills"
+      description: "Cybersecurity and information security",
+      logo: comptiaSecurity
+    },
+    {
+      name: "Google IT Support",
+      issuer: "Google",
+      date: "2024",
+      description: "IT infrastructure and technical support",
+      logo: googleIT
     }
   ];
 
@@ -165,7 +179,7 @@ const Education = () => {
               {certifications.map((cert, index) => (
                 <div key={index} className="certification-card">
                   <div className="certification-icon">
-                    <FaCertificate />
+                    <img src={cert.logo} alt={cert.name} style={{width: '100%', height: '100%', objectFit: 'contain'}} />
                   </div>
                   <div className="certification-details">
                     <h4>{cert.name}</h4>
@@ -175,34 +189,6 @@ const Education = () => {
                   </div>
                 </div>
               ))}
-            </div>
-          </div>
-
-          <div className="skills-summary-section">
-            <h3>Skills Summary</h3>
-            <div className="skills-summary-grid">
-              {keySkills.map((skillGroup, index) => (
-                <div key={index} className="skill-group-card">
-                  <div className="skill-group-header">
-                    <h4>{skillGroup.category}</h4>
-                  </div>
-                  <div className="skill-group-list">
-                    {skillGroup.skills.map((skill, idx) => (
-                      <span key={idx} className="skill-item">{skill}</span>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="education-footer">
-            <div className="footer-highlight">
-              <FaAward className="highlight-icon" />
-              <div className="highlight-content">
-                <h4>Academic Excellence</h4>
-                <p>Combining technical expertise with strong engineering foundation for comprehensive problem-solving capabilities</p>
-              </div>
             </div>
           </div>
         </div>
