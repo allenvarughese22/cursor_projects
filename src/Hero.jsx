@@ -9,9 +9,7 @@ import googleIT from '../comptia/google it.png';
 
 const titles = [
   'Technical Support Specialist',
-  'Software Testing Specialist',
-  'Automation Enthusiast',
-  'Cloud & API Explorer',
+  'Tech Enthusiast'
 ];
 
 const Hero = () => {
@@ -88,7 +86,7 @@ const Hero = () => {
               {currentTitle}
               <span className="typewriter-cursor">|</span>
             </h2>
-            <p className="hero-location">London, Ontario | PR Holder | All Shifts Available</p>
+            <p className="hero-location">London, Ontario </p>
             
             <div className="hero-contact">
               <a href="mailto:allenvarughese22@gmail.com">allenvarughese22@gmail.com</a> | 226-688-7343

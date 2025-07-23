@@ -9,27 +9,48 @@ const Education = () => {
   const educationData = [
     {
       institution: "Fanshawe College",
-      location: "London, Ontario, Canada",
-      degree: "Computer Systems Technology",
-      period: "2022 - 2024",
-      type: "Diploma",
-      description: "Comprehensive program focusing on computer systems, networking, and software development with hands-on practical experience.",
+      location: "London, Ontario",
+      degree: "Software and Information Systems Testing (Co-op)",
+      period: "September 2022 – April 2023",
+      type: "Ontario Graduate Certificate",
+      description: "Specialized graduate program focused on software and information systems testing, including hands-on co-op experience in quality assurance and test automation.",
       achievements: [
-        "Specialized in Technical Support and Software Testing methodologies",
-        "Completed advanced courses in system administration and troubleshooting",
-        "Developed practical skills in hardware and software maintenance",
-        "Gained expertise in network configuration and security protocols",
-        "Participated in real-world projects and industry simulations"
+        "Completed co-op placement in software testing and QA",
+        "Developed and executed test plans for real-world projects",
+        "Gained expertise in test automation tools and methodologies",
+        "Collaborated with development teams to ensure software quality",
+        "Applied industry best practices in information systems testing",
+        "Specialized in web application testing methodologies, technical documentation, and issue tracking within Agile environments.",
+        "Built foundational skills in automated testing tools and functional testing procedures, with exposure to technical support and basic networking concepts.",
+        "Collaborated on troubleshooting application issues, documenting bugs, and assisting in environment setup for test and support workflows.",
+        "Focused on information technology, database management, and IT infrastructure fundamentals."
       ],
-      skills: ["Technical Support", "Software Testing", "System Administration", "Network Configuration", "Hardware Maintenance", "Troubleshooting"],
+      skills: ["Software Testing", "Test Automation", "Quality Assurance", "Information Systems", "Test Planning", "Co-op Experience"],
       icon: <FaUniversity />,
       color: "primary"
     },
     {
-      institution: "Bachelor of Engineering",
-      location: "Mechanical Engineering",
-      degree: "Mechanical Engineering",
-      period: "2018 - 2022",
+      institution: "Karunya Institute of Technology and Science (KITS)",
+      location: "India",
+      degree: "Master of Engineering (M.Eng) in Mechanical Engineering",
+      period: "July 2013 - April 2015",
+      type: "Master's Degree",
+      description: "Specialization in Thermal Science. Advanced coursework and research in thermal systems, heat transfer, and energy engineering.",
+      achievements: [
+        "Completed research projects in thermal science and energy systems",
+        "Studied advanced heat transfer, thermodynamics, and fluid mechanics",
+        "Developed analytical and simulation skills for engineering applications",
+        "Collaborated on academic and industry-sponsored research initiatives"
+      ],
+      skills: ["Thermal Science", "Heat Transfer", "Energy Systems", "Research", "Simulation", "Advanced Engineering"],
+      icon: <FaGraduationCap />,
+      color: "secondary"
+    },
+    {
+      institution: "CCET",
+      location: "India",
+      degree: "Bachelor’s in Mechanical Engineering",
+      period: "2009 – 2013",
       type: "Bachelor's Degree",
       description: "Comprehensive engineering program covering mechanical design, manufacturing processes, and engineering principles with strong analytical and problem-solving foundation.",
       achievements: [

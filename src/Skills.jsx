@@ -17,17 +17,8 @@ const Skills = () => {
         'Customer Service Management',
         'Technical Troubleshooting',
         'Remote Desktop Support',
-        'Software Installation & Configuration',
-        'Hardware Diagnostics',
-        'Network Troubleshooting',
-        'System Administration',
-        'Help Desk Support',
-        'Incident Management',
-        'Knowledge Base Management',
-        'Service Level Agreement (SLA) Management',
-        'Escalation Procedures',
-        'Remote Support Tools',
-        'Customer Relationship Management',
+        'Software Installation & Configuration',     
+        'Help Desk Support',             
         'Technical Documentation'
       ]
     },
@@ -36,22 +27,13 @@ const Skills = () => {
       icon: <FaBug />,
       skills: [
         'Manual Testing',
-        'Automated Testing',
-        'API Testing',
-        'Performance Testing',
-        'Security Testing',
+        'Automated Testing',       
+        
         'Test Planning & Strategy',
         'Test Case Design & Execution',
-        'Bug Reporting & Tracking',
-        'Regression Testing',
-        'Cross-browser Testing',
-        'Mobile App Testing',
-        'Database Testing',
-        'User Acceptance Testing (UAT)',
+        
         'Test Environment Setup',
-        'Test Data Management',
-        'Load Testing',
-        'Stress Testing',
+        
         'Usability Testing'
       ]
     },
@@ -63,64 +45,39 @@ const Skills = () => {
         'JUnit/TestNG',
         'Postman',
         'JMeter',
-        'LoadRunner',
+        
         'JIRA',
-        'Confluence',
-        'TestRail',
-        'Bugzilla',
+        ,
         'Git/GitHub',
         'Jenkins CI/CD',
         'Docker',
         'AWS/Azure',
         'VMware',
-        'Remote Desktop',
-        'TeamViewer',
-        'ServiceNow',
-        'Zendesk',
-        'Slack',
-        'Microsoft Teams'
+        
       ]
     },
     programming: {
       title: 'Programming & Scripting',
       icon: <FaCode />,
       skills: [
-        'JavaScript',
+        
         'Python',
         'Java',
         'SQL',
         'HTML/CSS',
-        'React',
-        'Node.js',
-        'REST APIs',
-        'JSON/XML',
-        'Shell Scripting',
-        'PowerShell',
-        'Batch Scripting',
-        'TypeScript',
-        'C#',
-        'PHP'
-      ]
+              ]
     },
     soft: {
       title: 'Soft Skills',
       icon: <FaUsers />,
       skills: [
         'Problem Solving',
-        'Analytical Thinking',
-        'Team Collaboration',
-        'Communication',
+        
         'Time Management',
         'Attention to Detail',
         'Adaptability',
-        'Continuous Learning',
-        'Customer Service Excellence',
-        'Technical Documentation',
-        'Training & Mentoring',
-        'Critical Thinking',
-        'Decision Making',
-        'Stress Management',
-        'Leadership'
+        
+        
       ]
     }
   };
@@ -198,9 +155,9 @@ const Skills = () => {
             <p>18+ testing methodologies and tools for comprehensive quality assurance</p>
           </div>
           <div className="summary-card">
-            <FaTools className="summary-icon" />
-            <h3>Tools & Technologies</h3>
-            <p>20+ tools and platforms for development, testing, and support</p>
+            <FaUsers className="summary-icon" />
+            <h3>Teamwork & Collaboration</h3>
+            <p>Known for positive energy, adaptability, and building strong relationships across teams. Engaging communicator who values knowledge sharing and a supportive work culture.</p>
           </div>
         </div>
       </div>

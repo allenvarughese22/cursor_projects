@@ -5,58 +5,70 @@ import './Experience.css';
 const Experience = () => {
   const experience = [
     {
-      title: 'Technical Support Specialist',
-      company: 'Tech Solutions Inc.',
+      title: 'Software Quality Analyst',
+      company: 'Info-Tech Research Group',
       location: 'London, Ontario',
-      period: '2022 - Present',
+      period: 'May 2023 – September 2023',
       type: 'Full-time',
-      description: 'Providing comprehensive technical support and troubleshooting for software applications, hardware issues, and network connectivity problems. Managing customer inquiries through multiple channels and ensuring optimal system performance.',
+      description: 'Developed comprehensive test cases for web applications, ensuring cross-browser compatibility and system functionality.',
       achievements: [
-        'Resolved 95% of customer issues within SLA timeframes with 98% customer satisfaction',
-        'Implemented automated testing processes reducing bug reports by 40%',
-        'Mentored junior team members and created knowledge base documentation',
-        'Managed 50+ daily support tickets across multiple platforms',
-        'Reduced average resolution time by 30% through process optimization',
-        'Led training sessions for new team members on support procedures'
+        'Collaborated with Agile development teams to identify defects, conduct root cause analysis, and verify technical solutions.',
+        'Utilized JIRA ticketing system for issue tracking, escalation, and resolution documentation.',
+        'Executed API testing using REST APIs and Postman, validating system integrations and data integrity.',
+        'Created automated solutions using Java and Selenium WebDriver, improving testing efficiency and accuracy.'
       ],
-      technologies: ['ServiceNow', 'TeamViewer', 'Remote Desktop', 'JIRA', 'Confluence', 'Slack'],
-      icon: <FaUsers />
-    },
-    {
-      title: 'Software Testing Specialist',
-      company: 'Quality Assurance Corp.',
-      location: 'Toronto, Ontario',
-      period: '2021 - 2022',
-      type: 'Full-time',
-      description: 'Conducted comprehensive software testing including manual and automated testing procedures for web applications, mobile apps, and API endpoints.',
-      achievements: [
-        'Developed and executed 200+ test cases covering functional, regression, and performance testing',
-        'Automated 60% of regression testing processes using Selenium and TestNG',
-        'Improved test coverage by 35% and reduced bug escape rate by 25%',
-        'Performed API testing using Postman and JMeter for performance validation',
-        'Created comprehensive test documentation and reporting procedures',
-        'Collaborated with development teams to implement testing best practices'
-      ],
-      technologies: ['Selenium', 'TestNG', 'Postman', 'JMeter', 'JIRA', 'TestRail'],
+      technologies: ['Java', 'Selenium WebDriver', 'JIRA', 'Postman', 'REST APIs'],
       icon: <FaTools />
     },
     {
-      title: 'Junior Developer & QA Tester',
-      company: 'Startup Innovations',
-      location: 'Waterloo, Ontario',
-      period: '2020 - 2021',
+      title: 'Technical Support Specialist',
+      company: 'Sutherland Global Service',
+      location: 'Kerala, India',
+      period: 'January 2021 – May 2022',
       type: 'Full-time',
-      description: 'Contributed to full-stack development projects with focus on testing and quality assurance. Provided technical support for internal tools and applications.',
+      description: 'Provided Tier 2 support for Amazon Seller Central, resolving 50+ weekly tickets related to API integration errors, account configurations, and backend connectivity issues with a 95% SLA compliance rate.',
       achievements: [
-        'Built and maintained REST APIs with comprehensive testing coverage',
-        'Implemented CI/CD pipelines with automated testing integration',
-        'Provided technical support for internal development tools and applications',
-        'Collaborated on agile development teams with focus on quality assurance',
-        'Developed automated test scripts for web applications',
-        'Participated in code reviews and testing strategy planning'
+        'Investigated and troubleshot multi-system workflows including inventory sync, payment processing delays, and listing optimization failures.',
+        'Collaborated with engineering teams for critical issue escalation, creating logs and reproducible case reports.',
+        'Authored and updated internal documentation and knowledge base articles to streamline future resolutions.',
+        'Delivered interim solutions and technical workarounds to minimize downtime and maintain business continuity for sellers.'
       ],
-      technologies: ['JavaScript', 'React', 'Node.js', 'Git', 'Jenkins', 'Docker'],
-      icon: <FaCode />
+      technologies: ['Amazon Seller Central', 'API Integration', 'Knowledge Base', 'Ticketing Systems'],
+      icon: <FaUsers />
+    },
+    {
+      title: 'Technical Trainer',
+      company: 'Karunya Institute of Technology and Science',
+      location: 'India',
+      period: 'September 2017 – January 2020',
+      type: 'Full-time',
+      description: 'Taught AutoCAD 2D/3D drafting as the main tool for creating mechanical designs, including dimensioning, tolerancing, and layout standards.',
+      achievements: [
+        'Used Python and C alongside AutoCAD to automate calculations, such as stress analysis, fit checks, and batch drawing updates.',
+        'Designed projects where students combined AutoCAD modeling with Python/C scripts for engineering problem-solving and design validation.',
+        'Assisted with computer lab setup and maintenance, including OS installation, driver configuration, and hardware upgrades.'
+      ],
+      technologies: ['AutoCAD', 'Python', 'C', 'Windows OS', 'Computer Hardware'],
+      icon: <FaTools />
+    },
+    
+  ];
+
+  // Additional Experience Section
+  const additionalExperience = [
+    {
+      title: 'Injection Molding Operator',
+      company: 'Cooper Standard',
+      location: 'Stratford, Ontario, Canada',
+      period: 'May 2024 – Present',
+      description: 'Manufactured automotive components using injection molding and extrusion, ensuring quality standards, meeting production targets, and collaborating to streamline processes.'
+    },
+    {
+      title: 'Warehouse Associate',
+      company: 'Columbia Sportswear Warehouse',
+      location: 'London, Ontario, Canada',
+      period: 'June 2022 – October 2022',
+      description: 'Operated equipment and ensured 100% order accuracy in a fast-paced warehouse environment.'
     }
   ];
 
@@ -154,6 +166,20 @@ const Experience = () => {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Additional Experience Section */}
+        <div className="additional-experience-section">
+          <h3>Additional Experience</h3>
+          <div className="additional-experience-list">
+            {additionalExperience.map((job, idx) => (
+              <div key={idx} className="additional-experience-item">
+                <h4>{job.title}</h4>
+                <span className="additional-company">{job.company} | {job.location} | {job.period}</span>
+                <p className="additional-description">{job.description}</p>
+              </div>
+            ))}
+          </div>
         </div>
 
         <div className="experience-summary">

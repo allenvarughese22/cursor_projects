@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaCode, FaServer, FaCloud, FaDatabase, FaTools, FaGraduationCap, FaBriefcase, FaAward } from 'react-icons/fa';
+import { FaCode, FaServer, FaCloud, FaDatabase, FaTools, FaGraduationCap, FaBriefcase, FaAward, FaUsers } from 'react-icons/fa';
 import './About.css';
 
 const About = () => {
@@ -35,6 +35,18 @@ const About = () => {
   };
 
   const experience = [
+    {
+      title: 'Software Quality Analyst',
+      company: 'Info-Tech Research Group',
+      period: 'May 2023 – September 2023',
+      description: 'Developed comprehensive test cases for web applications, ensuring cross-browser compatibility and system functionality.',
+      achievements: [
+        'Collaborated with Agile development teams to identify defects, conduct root cause analysis, and verify technical solutions.',
+        'Utilized JIRA ticketing system for issue tracking, escalation, and resolution documentation.',
+        'Executed API testing using REST APIs and Postman, validating system integrations and data integrity.',
+        'Created automated solutions using Java and Selenium WebDriver, improving testing efficiency and accuracy.'
+      ]
+    },
     {
       title: 'Technical Support Specialist',
       company: 'Tech Solutions Inc.',
@@ -108,20 +120,10 @@ const About = () => {
                           <div className="about-text">
                 <h3>Professional Summary</h3>
                 <p>
-                  I'm a dedicated Technical Support Specialist and Software Testing Specialist with a passion for 
-                  ensuring software quality and exceptional user experience. Based in London, Ontario, I bring a unique 
-                  blend of technical troubleshooting expertise and comprehensive testing methodologies to every project.
+                  Technical Support & QA Specialist with real-world experience in troubleshooting, bug tracking, and root cause analysis. Certified in the CompTIA trifecta (A+, Network+, Security+), and fluent in tools like JIRA, Postman, and Agile workflows.
                 </p>
                 <p>
-                  With extensive experience in both technical support and software testing, I specialize in identifying 
-                  and resolving complex technical issues while maintaining high standards of quality assurance. My expertise 
-                  spans from customer service management to automated testing implementation, providing end-to-end solutions 
-                  for software reliability and user satisfaction.
-                </p>
-                <p>
-                  I'm committed to continuous learning and staying current with the latest support tools and testing 
-                  methodologies. Available for all shifts and ready to contribute to dynamic teams that value quality, 
-                  innovation, and exceptional customer service.
+                  Quick learner with working knowledge of Java, Python, SQL, and Linux. Tech-savvy, adaptable, and always eager to grow—ready to bring value to modern IT and support teams.
                 </p>
               </div>
             <div className="about-stats">
@@ -133,17 +135,17 @@ const About = () => {
                 </div>
               </div>
               <div className="stat-item">
-                <FaTools className="stat-icon" />
+                <FaUsers className="stat-icon" />
                 <div className="stat-content">
-                  <h4>20+ Tools</h4>
-                  <p>Testing & Support</p>
+                  <h4>Team Player</h4>
+                  <p> Reliable & Adaptable </p>
                 </div>
               </div>
               <div className="stat-item">
                 <FaAward className="stat-icon" />
                 <div className="stat-content">
-                  <h4>15+ Skills</h4>
-                  <p>Software Testing</p>
+                  <h4>CompTia Certified</h4>
+                  <p>Self Learner</p>
                 </div>
               </div>
             </div>
