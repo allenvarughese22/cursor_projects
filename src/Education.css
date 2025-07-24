@@ -22,7 +22,7 @@
 .education-title {
   font-size: clamp(2.5rem, 6vw, 4rem);
   font-weight: 700;
-  color: var(--primary-black);
+  color: #DC143C;
   margin-bottom: var(--space-4);
   text-transform: uppercase;
   letter-spacing: -0.02em;
@@ -91,6 +91,24 @@
   background: linear-gradient(180deg, #b0b0b0, #808080);
 }
 
+.education-card {
+  background: #fff;
+}
+
+.education-card .education-degree,
+.education-card .education-institution {
+  color: #DC143C;
+}
+
+.education-card .education-meta,
+.education-card .education-location,
+.education-card .education-period,
+.education-card .education-type,
+.education-card .education-description,
+.education-card .education-achievements li {
+  color: var(--primary-black);
+}
+
 .education-icon {
   display: flex;
   align-items: center;
@@ -115,7 +133,7 @@
 
 .education-degree {
   font-size: 1.8rem;
-  color: #e0e0e0;
+  color: #DC143C;
   margin-bottom: 1rem;
   font-weight: 600;
 }
@@ -128,7 +146,7 @@
 }
 
 .education-institution {
-  color: #e0e0e0;
+  color: #DC143C;
   font-weight: 600;
   font-size: 1.1rem;
 }
@@ -153,7 +171,7 @@
 }
 
 .education-description {
-  color: #b0b0b0;
+  color: var(--primary-black);
   line-height: 1.6;
   margin-bottom: 2rem;
   font-size: 1rem;
@@ -164,7 +182,7 @@
 }
 
 .education-achievements h4 {
-  color: #e0e0e0;
+  color: #DC143C;
   font-size: 1.2rem;
   margin-bottom: 1rem;
   font-weight: 600;
@@ -177,7 +195,7 @@
 }
 
 .education-achievements li {
-  color: #b0b0b0;
+  color: var(--primary-black);
   margin-bottom: 0.5rem;
   padding-left: 1.5rem;
   position: relative;
@@ -188,12 +206,12 @@
   content: '✓';
   position: absolute;
   left: 0;
-  color: #e0e0e0;
+  color: #DC143C;
   font-weight: bold;
 }
 
 .education-skills h4 {
-  color: #e0e0e0;
+  color: #DC143C;
   font-size: 1.2rem;
   margin-bottom: 1rem;
   font-weight: 600;
@@ -225,14 +243,23 @@
 /* Certifications Section */
 .certifications-section {
   margin-bottom: 4rem;
+  color: var(--primary-black);
 }
 
 .certifications-section h3 {
   font-size: 2rem;
-  color: #e0e0e0;
+  color: #DC143C;
   margin-bottom: 2rem;
   text-align: center;
   font-weight: 600;
+}
+
+.certification-card,
+.certification-details,
+.certification-issuer,
+.certification-date,
+.certification-description {
+  color: #000 !important;
 }
 
 .certifications-grid {
@@ -273,26 +300,26 @@
 }
 
 .certification-details h4 {
-  color: #e0e0e0;
+  color: #DC143C;
   font-size: 1.1rem;
   margin-bottom: 0.5rem;
   font-weight: 600;
 }
 
 .certification-issuer {
-  color: #b0b0b0;
+  color: #000 !important;
   font-size: 0.9rem;
   margin-bottom: 0.25rem;
 }
 
 .certification-date {
-  color: #b0b0b0;
+  color: #000 !important;
   font-size: 0.9rem;
   margin-bottom: 0.5rem;
 }
 
 .certification-description {
-  color: #b0b0b0;
+  color: #000 !important;
   font-size: 0.9rem;
   line-height: 1.5;
   margin: 0;

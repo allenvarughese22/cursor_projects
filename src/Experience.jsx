@@ -181,29 +181,6 @@ const Experience = () => {
             ))}
           </div>
         </div>
-
-        <div className="experience-summary">
-          <div className="summary-content">
-            <h3>Career Highlights</h3>
-            <div className="highlights-grid">
-              <div className="highlight-item">
-                <FaTrophy className="highlight-icon" />
-                <h4>Technical Excellence</h4>
-                <p>Consistently achieved high customer satisfaction rates and efficient problem resolution</p>
-              </div>
-              <div className="highlight-item">
-                <FaTools className="highlight-icon" />
-                <h4>Testing Expertise</h4>
-                <p>Comprehensive experience in both manual and automated testing methodologies</p>
-              </div>
-              <div className="highlight-item">
-                <FaUsers className="highlight-icon" />
-                <h4>Team Leadership</h4>
-                <p>Mentored team members and contributed to knowledge sharing initiatives</p>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );

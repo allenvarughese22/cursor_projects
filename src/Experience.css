@@ -22,7 +22,7 @@
 .experience-title {
   font-size: clamp(2.5rem, 6vw, 4rem);
   font-weight: 700;
-  color: var(--primary-black);
+  color: #DC143C;
   margin-bottom: var(--space-4);
   text-transform: uppercase;
   letter-spacing: -0.02em;
@@ -101,7 +101,7 @@
   top: 0;
   bottom: 0;
   width: 4px;
-  background: linear-gradient(180deg, #00bcd4, #0097a7);
+  background: linear-gradient(180deg, #DC143C, #B22222);
   border-radius: 2px;
 }
 
@@ -116,13 +116,13 @@
   top: 1rem;
   width: 60px;
   height: 60px;
-  background: linear-gradient(135deg, #00bcd4, #0097a7);
+  background: linear-gradient(135deg, #DC143C, #B22222);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   border: 4px solid white;
-  box-shadow: 0 0 0 4px #00bcd4;
+  box-shadow: 0 0 0 4px #DC143C;
   z-index: 2;
 }
 
@@ -136,7 +136,7 @@
   padding: 2.5rem;
   border-radius: 16px;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
-  border-left: 4px solid #00bcd4;
+  border-left: 4px solid #DC143C;
   transition: all 0.3s ease;
 }
 
@@ -166,7 +166,7 @@
 }
 
 .timeline-company {
-  color: #00bcd4;
+  color: #DC143C;
   font-weight: 600;
   font-size: 1.2rem;
 }
@@ -188,8 +188,8 @@
 }
 
 .timeline-type {
-  background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
-  color: #0097a7;
+  background: linear-gradient(135deg, #ffe6e6, #ffcccc);
+  color: #B22222;
   padding: 0.25rem 0.75rem;
   border-radius: 15px;
   font-size: 0.8rem;
@@ -236,7 +236,7 @@
   content: '✓';
   position: absolute;
   left: 0;
-  color: #00bcd4;
+  color: #DC143C;
   font-weight: bold;
   font-size: 1.1rem;
 }
@@ -259,7 +259,7 @@
 }
 
 .tech-tag {
-  background: linear-gradient(135deg, #00bcd4, #0097a7);
+  background: linear-gradient(135deg, #DC143C, #B22222);
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 20px;
@@ -270,7 +270,7 @@
 
 .tech-tag:hover {
   transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(0, 188, 212, 0.3);
+  box-shadow: 0 4px 12px rgba(220, 20, 60, 0.3);
 }
 
 /* Summary Section */
@@ -279,7 +279,7 @@
   border-radius: 20px;
   padding: 3rem;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(0, 188, 212, 0.1);
+  border: 1px solid rgba(220, 20, 60, 0.1);
 }
 
 .summary-content h3 {
@@ -301,7 +301,7 @@
   padding: 2rem;
   background: rgba(255, 255, 255, 0.8);
   border-radius: 16px;
-  border: 1px solid rgba(0, 188, 212, 0.1);
+  border: 1px solid rgba(220, 20, 60, 0.1);
   transition: all 0.3s ease;
 }
 
@@ -312,7 +312,7 @@
 
 .highlight-icon {
   font-size: 3rem;
-  color: #00bcd4;
+  color: #DC143C;
   margin-bottom: 1rem;
 }
 

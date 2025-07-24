@@ -140,25 +140,6 @@ const Contact = () => {
                 ))}
               </div>
             </div>
-
-            <div className="availability-section">
-              <h3>Availability</h3>
-              <div className="availability-card">
-                <div className="availability-icon">
-                  <FaClock />
-                </div>
-                <div className="availability-details">
-                  <h4>All Shifts Available</h4>
-                  <p>Flexible with work schedules and time zones</p>
-                  <ul className="availability-list">
-                    <li>Full-time positions</li>
-                    <li>Part-time opportunities</li>
-                    <li>Contract work</li>
-                    <li>Remote positions</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
           </div>
 
           <div className="contact-form-section">
@@ -237,15 +218,14 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="contact-footer">
-          <div className="footer-card">
-            <FaDownload className="footer-icon" />
-            <h4>Download Resume</h4>
-            <p>Get a copy of my detailed resume</p>
-            <a href="/Resume_Allen_Varughese.pdf" className="download-btn" download="Resume_Allen_Varughese.pdf">
-              Download PDF
-            </a>
-          </div>
+        {/* Remove the contact-footer section and add a haiku poem */}
+        <div className="contact-quote">
+          <blockquote>
+            <p>In quiet moments<br />
+            Connections bloom, hearts open<br />
+            New journeys begin</p>
+            <footer>— Haiku</footer>
+          </blockquote>
         </div>
       </div>
     </section>

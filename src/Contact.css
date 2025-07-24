@@ -2,7 +2,8 @@
 .contact-section {
   min-height: auto;
   padding: var(--space-16) 0;
-  background: var(--primary-white);
+  background: #fff !important;
+  color: #000 !important;
   position: relative;
   overflow: hidden;
 }
@@ -31,7 +32,7 @@
 .contact-divider {
   width: 80px;
   height: 3px;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.4));
+  background: #DC143C !important; /* minimal red accent */
   margin: 0 auto 1rem;
   border-radius: 2px;
 }
@@ -61,6 +62,11 @@
   font-weight: 600;
 }
 
+.contact-info-section, .contact-info-section * {
+  color: #000 !important;
+  background: #fff !important;
+}
+
 .contact-cards {
   display: flex;
   flex-direction: column;
@@ -73,18 +79,18 @@
   align-items: flex-start;
   gap: 1rem;
   padding: 1.5rem;
-  background: rgba(220, 20, 60, 0.05);
+  background: #fff !important;
   border-radius: 16px;
-  border: 1px solid rgba(220, 20, 60, 0.1);
+  border: 1px solid #e0e0e0 !important;
   backdrop-filter: blur(20px);
   transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.04);
 }
 
 .contact-card:hover {
-  transform: translateY(-3px);
-  background: rgba(220, 20, 60, 0.1);
-  border-color: rgba(220, 20, 60, 0.2);
-  box-shadow: 0 10px 30px rgba(220, 20, 60, 0.2);
+  background: #fafafa !important;
+  border-color: #DC143C !important; /* minimal red accent on hover */
+  box-shadow: 0 4px 16px rgba(220,20,60,0.08);
 }
 
 .contact-icon {
@@ -93,9 +99,9 @@
   justify-content: center;
   width: 50px;
   height: 50px;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
+  background: #f5f5f5 !important;
   border-radius: 12px;
-  color: rgba(255, 255, 255, 0.9);
+  color: #DC143C !important; /* minimal red accent */
   font-size: 1.3rem;
   flex-shrink: 0;
 }
@@ -132,22 +138,24 @@
 
 .social-cards {
   display: flex;
-  flex-direction: column;
-  gap: 1rem;
+  flex-direction: row;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
 }
 
 .social-card {
-  display: flex;
-  align-items: flex-start;
-  gap: 1rem;
-  padding: 1.5rem;
-  background: rgba(255, 255, 255, 0.08);
-  border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(20px);
-  transition: all 0.3s ease;
-  text-decoration: none;
-  color: inherit;
+  flex: 1 1 220px;
+  min-width: 200px;
+  max-width: 300px;
+}
+
+@media (max-width: 768px) {
+  .social-cards {
+    flex-direction: column;
+    gap: 1rem;
+  }
 }
 
 .social-card:hover {
@@ -190,64 +198,6 @@
   margin: 0;
 }
 
-/* Availability Section */
-.availability-card {
-  display: flex;
-  align-items: flex-start;
-  gap: 1rem;
-  padding: 2rem;
-  background: rgba(255, 255, 255, 0.08);
-  border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(20px);
-}
-
-.availability-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 60px;
-  height: 60px;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
-  border-radius: 16px;
-  color: rgba(255, 255, 255, 0.9);
-  font-size: 1.5rem;
-  flex-shrink: 0;
-}
-
-.availability-details h4 {
-  font-size: 1.3rem;
-  color: rgba(255, 255, 255, 0.9);
-  margin-bottom: 0.5rem;
-  font-weight: 600;
-}
-
-.availability-details p {
-  color: rgba(255, 255, 255, 0.7);
-  margin-bottom: 1rem;
-}
-
-.availability-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.availability-list li {
-  color: rgba(255, 255, 255, 0.6);
-  margin-bottom: 0.5rem;
-  padding-left: 1.5rem;
-  position: relative;
-}
-
-.availability-list li::before {
-  content: '✓';
-  position: absolute;
-  left: 0;
-  color: rgba(255, 255, 255, 0.8);
-  font-weight: bold;
-}
-
 /* Contact Form Section */
 .contact-form-section {
   background: rgba(255, 255, 255, 0.08);
@@ -278,24 +228,25 @@
 .form-group input,
 .form-group textarea {
   padding: 1rem;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: #fff !important;
+  color: #000 !important;
+  border: 1px solid #e0e0e0 !important;
   border-radius: 12px;
-  color: rgba(255, 255, 255, 0.9);
   font-size: 1rem;
   transition: all 0.3s ease;
   backdrop-filter: blur(10px);
 }
 
-.form-group input::placeholder,
-.form-group textarea::placeholder {
-  color: rgba(255, 255, 255, 0.5);
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #888 !important;
+  opacity: 1 !important;
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: rgba(255, 255, 255, 0.4);
+  border-color: #DC143C !important;
   background: rgba(255, 255, 255, 0.15);
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
 }
@@ -311,9 +262,9 @@
   justify-content: center;
   gap: 0.5rem;
   padding: 1rem 2rem;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.1) 100%);
-  color: rgba(255, 255, 255, 0.9);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: #DC143C !important;
+  color: #fff !important;
+  border: none !important;
   border-radius: 12px;
   font-size: 1rem;
   font-weight: 500;
@@ -324,7 +275,8 @@
 }
 
 .submit-btn:hover:not(:disabled) {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.2) 100%);
+  background: #000 !important;
+  color: #fff !important;
   transform: translateY(-2px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
@@ -395,19 +347,18 @@
 .download-btn {
   display: inline-block;
   padding: 0.75rem 1.5rem;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.1) 100%);
-  color: rgba(255, 255, 255, 0.9);
+  background: #DC143C !important;
+  color: #fff !important;
   text-decoration: none;
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: none !important;
   transition: all 0.3s ease;
   font-weight: 500;
 }
 
 .download-btn:hover {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.2) 100%);
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  background: #000 !important;
+  color: #fff !important;
 }
 
 /* Animations */
@@ -424,7 +375,6 @@
 
 .contact-card,
 .social-card,
-.availability-card,
 .contact-form-section,
 .footer-card {
   animation: fadeInUp 0.6s ease-out;
@@ -488,5 +438,93 @@
   
   .submit-btn {
     padding: 0.8rem 1.5rem;
+  }
+} 
+
+.contact-quote {
+  margin: 3rem auto 0 auto;
+  max-width: 500px;
+  padding: 2rem 1.5rem;
+  background: #f9f9f9;
+  border-left: 5px solid #DC143C;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  text-align: center;
+}
+
+.contact-quote blockquote {
+  margin: 0;
+  padding: 0;
+  font-style: italic;
+  color: #333;
+}
+
+.contact-quote p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+.contact-quote footer {
+  font-size: 1rem;
+  color: #DC143C;
+  font-weight: 500;
+} 
+
+/* Remove or override old .social-cards and .social-card rules */
+.social-cards, .social-card {
+  all: unset;
+}
+
+.social-section .social-cards {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center !important;
+  align-items: stretch !important;
+  gap: 2rem !important;
+  width: 100%;
+}
+
+.social-section .social-card {
+  flex: 1 1 220px !important;
+  max-width: 300px !important;
+  min-width: 200px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  background: #fff !important;
+  border: 1px solid #e0e0e0 !important;
+  border-radius: 12px !important;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.04) !important;
+  padding: 1.5rem !important;
+  transition: box-shadow 0.3s, border-color 0.3s !important;
+  color: #000 !important;
+}
+
+.social-section .social-card:hover {
+  border-color: #DC143C !important;
+  box-shadow: 0 4px 16px rgba(220,20,60,0.08) !important;
+}
+
+.social-section .social-icon {
+  background: #f5f5f5 !important;
+  color: #DC143C !important;
+}
+
+.social-section .social-details h4,
+.social-section .social-value,
+.social-section .social-description {
+  color: #000 !important;
+}
+
+@media (max-width: 768px) {
+  .social-section .social-cards {
+    flex-direction: column !important;
+    gap: 1rem !important;
+    align-items: stretch !important;
+  }
+  .social-section .social-card {
+    max-width: 100% !important;
+    min-width: 0 !important;
   }
 } 
