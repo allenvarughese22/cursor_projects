@@ -1,8 +1,8 @@
 /* Experience Section Styles */
 .experience-section {
-  min-height: 100vh;
-  padding: 4rem 0;
-  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  min-height: auto;
+  padding: var(--space-16) 0;
+  background: var(--primary-white);
   position: relative;
   overflow: hidden;
 }
@@ -20,14 +20,12 @@
 }
 
 .experience-title {
-  font-size: 3rem;
+  font-size: clamp(2.5rem, 6vw, 4rem);
   font-weight: 700;
-  color: #e0e0e0;
-  margin-bottom: 1rem;
-  background: linear-gradient(135deg, #e0e0e0, #b0b0b0);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--primary-black);
+  margin-bottom: var(--space-4);
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
 }
 
 .experience-divider {
@@ -40,7 +38,7 @@
 
 .experience-subtitle {
   font-size: 1.2rem;
-  color: #b0b0b0;
+  color: var(--primary-black);
   max-width: 600px;
   margin: 0 auto;
   line-height: 1.6;
@@ -55,35 +53,36 @@
 }
 
 .stat-card {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(220, 20, 60, 0.05);
   padding: 2rem;
   border-radius: 16px;
   text-align: center;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
-  border: 1px solid rgba(224, 224, 224, 0.2);
+  box-shadow: 0 8px 30px rgba(220, 20, 60, 0.1);
+  border: 1px solid rgba(220, 20, 60, 0.2);
   transition: all 0.3s ease;
 }
 
 .stat-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 12px 40px rgba(220, 20, 60, 0.2);
+  background: rgba(220, 20, 60, 0.1);
 }
 
 .stat-icon {
   font-size: 2.5rem;
-  color: #e0e0e0;
+  color: #DC143C;
   margin-bottom: 1rem;
 }
 
 .stat-number {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #e0e0e0;
+  color: var(--primary-black);
   margin-bottom: 0.5rem;
 }
 
 .stat-label {
-  color: #b0b0b0;
+  color: var(--primary-black);
   font-weight: 500;
   font-size: 1rem;
 }

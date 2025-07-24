@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { FaLinkedin, FaGithub, FaEnvelope, FaChevronDown, FaDownload } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaEnvelope, FaDownload } from 'react-icons/fa';
 import './Hero.css';
 import './design-system.css';
 import profilePhoto from '../my photo.png';
@@ -149,57 +149,9 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Tesla-style certifications section */}
-      <div className="certifications-tesla">
-        <div className="container">
-          <h3 className="certifications-title font-display">Professional Certifications</h3>
-          <div className="certifications-grid grid grid-cols-4">
-            <div className="certification-card-tesla">
-              <div className="certification-logo">
-                <img src={comptiaA} alt="CompTIA A+" />
-              </div>
-              <div className="certification-content">
-                <h4 className="font-bold">CompTIA A+</h4>
-                <p>Hardware & Software</p>
-              </div>
-            </div>
-            
-            <div className="certification-card-tesla">
-              <div className="certification-logo">
-                <img src={comptiaNetwork} alt="CompTIA Network+" />
-              </div>
-              <div className="certification-content">
-                <h4 className="font-bold">CompTIA Network+</h4>
-                <p>Network Infrastructure</p>
-              </div>
-            </div>
-            
-            <div className="certification-card-tesla">
-              <div className="certification-logo">
-                <img src={comptiaSecurity} alt="CompTIA Security+" />
-              </div>
-              <div className="certification-content">
-                <h4 className="font-bold">CompTIA Security+</h4>
-                <p>Cybersecurity</p>
-              </div>
-            </div>
-            
-            <div className="certification-card-tesla">
-              <div className="certification-logo">
-                <img src={googleIT} alt="Google IT Support" />
-              </div>
-              <div className="certification-content">
-                <h4 className="font-bold">Google IT Support</h4>
-                <p>IT Infrastructure</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+
       
-      <div className="scroll-indicator">
-        <FaChevronDown />
-      </div>
+
     </section>
   );
 };

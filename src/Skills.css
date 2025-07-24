@@ -1,8 +1,8 @@
 /* Skills Section Styles */
 .skills-section {
-  min-height: 100vh;
-  padding: 4rem 0;
-  background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%);
+  min-height: auto;
+  padding: var(--space-16) 0;
+  background: var(--primary-white);
   position: relative;
   overflow: hidden;
 }
@@ -20,14 +20,12 @@
 }
 
 .skills-title {
-  font-size: 3rem;
+  font-size: clamp(2.5rem, 6vw, 4rem);
   font-weight: 700;
-  color: #e0e0e0;
-  margin-bottom: 1rem;
-  background: linear-gradient(135deg, #e0e0e0, #b0b0b0);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #DC143C;
+  margin-bottom: var(--space-4);
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
 }
 
 .skills-divider {
@@ -40,7 +38,7 @@
 
 .skills-subtitle {
   font-size: 1.2rem;
-  color: #b0b0b0;
+  color: var(--primary-black);
   max-width: 600px;
   margin: 0 auto;
   line-height: 1.6;
@@ -60,10 +58,10 @@
   align-items: center;
   gap: 0.5rem;
   padding: 0.75rem 1.5rem;
-  background: rgba(255, 255, 255, 0.1);
-  border: 2px solid rgba(224, 224, 224, 0.3);
+  background: rgba(220, 20, 60, 0.05);
+  border: 2px solid rgba(220, 20, 60, 0.3);
   border-radius: 25px;
-  color: #b0b0b0;
+  color: var(--primary-black);
   font-weight: 500;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -71,16 +69,16 @@
 }
 
 .filter-btn:hover {
-  background: rgba(224, 224, 224, 0.2);
-  border-color: #e0e0e0;
+  background: rgba(220, 20, 60, 0.1);
+  border-color: #DC143C;
   transform: translateY(-2px);
 }
 
 .filter-btn.active {
-  background: linear-gradient(135deg, #e0e0e0, #b0b0b0);
-  color: #1a1a1a;
-  border-color: #e0e0e0;
-  box-shadow: 0 4px 15px rgba(224, 224, 224, 0.3);
+  background: linear-gradient(135deg, #DC143C, #B22222);
+  color: var(--primary-white);
+  border-color: #DC143C;
+  box-shadow: 0 4px 15px rgba(220, 20, 60, 0.3);
 }
 
 .filter-btn svg {
@@ -123,15 +121,15 @@
   justify-content: center;
   width: 50px;
   height: 50px;
-  background: linear-gradient(135deg, #00bcd4, #0097a7);
-  color: white;
+  background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
+  color: var(--primary-black);
   border-radius: 50%;
   font-size: 1.5rem;
 }
 
 .category-title {
   font-size: 1.8rem;
-  color: #263238;
+  color: var(--primary-black);
   font-weight: 600;
   margin: 0;
   flex-grow: 1;
@@ -139,7 +137,7 @@
 
 .skill-count {
   background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
-  color: #0097a7;
+  color: var(--primary-black);
   padding: 0.5rem 1rem;
   border-radius: 20px;
   font-weight: 600;
@@ -171,13 +169,13 @@
 }
 
 .skill-icon {
-  color: #00bcd4;
+  color: var(--primary-black);
   font-size: 1.1rem;
   flex-shrink: 0;
 }
 
 .skill-name {
-  color: #546e7a;
+  color: var(--primary-black);
   font-weight: 500;
   font-size: 0.95rem;
   line-height: 1.4;
@@ -208,19 +206,19 @@
 
 .summary-icon {
   font-size: 3rem;
-  color: #00bcd4;
+  color: var(--primary-black);
   margin-bottom: 1rem;
 }
 
 .summary-card h3 {
   font-size: 1.4rem;
-  color: #263238;
+  color: var(--primary-black);
   margin-bottom: 1rem;
   font-weight: 600;
 }
 
 .summary-card p {
-  color: #546e7a;
+  color: var(--primary-black);
   line-height: 1.6;
   margin: 0;
 }

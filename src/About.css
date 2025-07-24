@@ -1,8 +1,8 @@
 /* About Section Styles */
 .about-section {
-  min-height: 100vh;
-  padding: 4rem 0;
-  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  min-height: auto;
+  padding: var(--space-16) 0;
+  background: var(--primary-white);
   position: relative;
   overflow: hidden;
 }
@@ -20,14 +20,12 @@
 }
 
 .about-title {
-  font-size: 3rem;
+  font-size: clamp(2.5rem, 6vw, 4rem);
   font-weight: 700;
-  color: #e0e0e0;
-  margin-bottom: 1rem;
-  background: linear-gradient(135deg, #e0e0e0, #b0b0b0);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--primary-black);
+  margin-bottom: var(--space-4);
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
 }
 
 .about-divider {
@@ -54,17 +52,17 @@
 }
 
 .about-text h3 {
-  font-size: 1.8rem;
-  color: #e0e0e0;
-  margin-bottom: 1.5rem;
+  font-size: var(--text-xl);
+  color: var(--primary-black);
+  margin-bottom: var(--space-4);
   font-weight: 600;
 }
 
 .about-text p {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  color: #b0b0b0;
-  margin-bottom: 1.5rem;
+  font-size: var(--text-lg);
+  line-height: 1.6;
+  color: var(--primary-black);
+  margin-bottom: var(--space-4);
   text-align: justify;
 }
 
@@ -80,22 +78,23 @@
   align-items: center;
   gap: 1rem;
   padding: 1.5rem;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.9);
   border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(224, 224, 224, 0.1);
-  border: 1px solid rgba(224, 224, 224, 0.2);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
 }
 
 .stat-item:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 30px rgba(224, 224, 224, 0.2);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  background: rgba(255, 255, 255, 1);
 }
 
 .stat-icon {
   font-size: 2rem;
-  color: #e0e0e0;
-  background: linear-gradient(135deg, rgba(224, 224, 224, 0.2), rgba(176, 176, 176, 0.1));
+  color: #DC143C;
+  background: linear-gradient(135deg, rgba(220, 20, 60, 0.2), rgba(220, 20, 60, 0.1));
   padding: 1rem;
   border-radius: 50%;
 }
@@ -103,20 +102,20 @@
 .stat-content h4 {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #e0e0e0;
+  color: var(--primary-black);
   margin-bottom: 0.25rem;
 }
 
 .stat-content p {
   font-size: 0.9rem;
-  color: #b0b0b0;
+  color: var(--primary-black);
   margin: 0;
 }
 
 /* Skills Section */
 .skills-section h3 {
   font-size: 2rem;
-  color: #e0e0e0;
+  color: #DC143C;
   margin-bottom: 2rem;
   text-align: center;
   font-weight: 600;
@@ -144,7 +143,7 @@
 
 .skill-category h4 {
   font-size: 1.3rem;
-  color: #e0e0e0;
+  color: var(--primary-black);
   margin-bottom: 1.5rem;
   display: flex;
   align-items: center;
@@ -153,7 +152,7 @@
 }
 
 .skill-category h4 svg {
-  color: #e0e0e0;
+  color: var(--primary-black);
 }
 
 .skill-tags {
@@ -163,18 +162,20 @@
 }
 
 .skill-tag {
-  background: linear-gradient(135deg, #e0e0e0, #b0b0b0);
-  color: #1a1a1a;
+  background: linear-gradient(135deg, rgba(220, 20, 60, 0.1), rgba(220, 20, 60, 0.05));
+  color: var(--primary-black);
   padding: 0.5rem 1rem;
   border-radius: 25px;
   font-size: 0.9rem;
   font-weight: 500;
   transition: all 0.3s ease;
+  border: 1px solid rgba(220, 20, 60, 0.2);
 }
 
 .skill-tag:hover {
   transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(224, 224, 224, 0.3);
+  box-shadow: 0 4px 12px rgba(220, 20, 60, 0.2);
+  background: linear-gradient(135deg, rgba(220, 20, 60, 0.2), rgba(220, 20, 60, 0.1));
 }
 
 /* Experience Section */

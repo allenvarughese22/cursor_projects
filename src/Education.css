@@ -1,8 +1,8 @@
 /* Education Section Styles */
 .education-section {
-  min-height: 100vh;
-  padding: 4rem 0;
-  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  min-height: auto;
+  padding: var(--space-16) 0;
+  background: var(--primary-white);
   position: relative;
   overflow: hidden;
 }
@@ -20,14 +20,12 @@
 }
 
 .education-title {
-  font-size: 3rem;
+  font-size: clamp(2.5rem, 6vw, 4rem);
   font-weight: 700;
-  color: #e0e0e0;
-  margin-bottom: 1rem;
-  background: linear-gradient(135deg, #e0e0e0, #b0b0b0);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--primary-black);
+  margin-bottom: var(--space-4);
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
 }
 
 .education-divider {
@@ -40,7 +38,7 @@
 
 .education-subtitle {
   font-size: 1.2rem;
-  color: #b0b0b0;
+  color: var(--primary-black);
   max-width: 600px;
   margin: 0 auto;
   line-height: 1.6;
@@ -58,9 +56,9 @@
   display: flex;
   gap: 2rem;
   padding: 2.5rem;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(220, 20, 60, 0.05);
   border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(220, 20, 60, 0.1);
   backdrop-filter: blur(20px);
   transition: all 0.3s ease;
   position: relative;
@@ -80,9 +78,9 @@
 
 .education-card:hover {
   transform: translateY(-5px);
-  background: rgba(255, 255, 255, 0.12);
-  border-color: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+  background: rgba(220, 20, 60, 0.1);
+  border-color: rgba(220, 20, 60, 0.2);
+  box-shadow: 0 15px 40px rgba(220, 20, 60, 0.2);
 }
 
 .education-card.primary::before {
@@ -209,7 +207,7 @@
 
 .skill-tag {
   background: linear-gradient(135deg, rgba(224, 224, 224, 0.2), rgba(176, 176, 176, 0.1));
-  color: #e0e0e0;
+  color: var(--primary-black);
   padding: 0.5rem 1rem;
   border-radius: 20px;
   font-size: 0.9rem;

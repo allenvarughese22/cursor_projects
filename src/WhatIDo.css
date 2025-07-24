@@ -2,7 +2,7 @@
 
 .what-i-do {
   background: var(--primary-white);
-  padding: var(--space-32) 0;
+  padding: var(--space-8) 0;
   position: relative;
   overflow: hidden;
 }
@@ -25,7 +25,7 @@
 
 .section-header {
   text-align: center;
-  margin-bottom: var(--space-16);
+  margin-bottom: var(--space-4);
 }
 
 .section-title {
@@ -45,7 +45,7 @@
 }
 
 .services-grid {
-  margin-bottom: var(--space-16);
+  margin-bottom: var(--space-4);
 }
 
 .service-card {
