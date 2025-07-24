@@ -245,6 +245,18 @@
 .skill-category-card:nth-child(4) { animation-delay: 0.4s; }
 .skill-category-card:nth-child(5) { animation-delay: 0.5s; }
 
+section#skills.skills-section .skills-container .skills-content .skill-category-card .category-header h3.category-title {
+  color: #000 !important;
+}
+
+.skills-section .skills-title {
+  color: #DC143C !important;
+}
+
+.skills-section h3 {
+  color: #DC143C !important;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .skills-container {

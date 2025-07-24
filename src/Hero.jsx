@@ -90,8 +90,7 @@ const Hero = () => {
             
             <div className="hero-description">
               <p className="font-body">
-                Technical Support & QA Specialist with CompTIA A+, Network+, Security+ certifications. 
-                Expert in troubleshooting, software testing, and IT infrastructure.
+                Technical Support & Software Developer | CompTIA A+ | Network+ | Security+ | Skilled in Troubleshooting, Software Testing & IT Infrastructure.
               </p>
             </div>
             

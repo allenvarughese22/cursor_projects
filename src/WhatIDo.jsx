@@ -59,13 +59,6 @@ const WhatIDo = () => {
           ))}
         </div>
         
-        <div className="cta-section">
-          <h3 className="cta-title font-display">Ready to Work Together?</h3>
-          <div className="cta-buttons">
-            <button className="btn-primary">Start a Project</button>
-            <button className="btn-secondary">View Resume</button>
-          </div>
-        </div>
       </div>
     </section>
   );

@@ -2,9 +2,35 @@
 .education-section {
   min-height: auto;
   padding: var(--space-16) 0;
-  background: var(--primary-white);
+  background: #fff !important;
   position: relative;
   overflow: hidden;
+}
+
+.education-section,
+.education-section * {
+  background: #fff !important;
+}
+
+.education-section h1,
+.education-section h2,
+.education-section h3,
+.education-section h4,
+.education-section h5,
+.education-section h6 {
+  color: #DC143C !important;
+}
+
+.education-section p,
+.education-section span,
+.education-section div,
+.education-section li,
+.education-section a,
+.education-section label,
+.education-section input,
+.education-section textarea,
+.education-section button {
+  color: #000 !important;
 }
 
 .education-container {
@@ -189,9 +215,16 @@
 }
 
 .education-achievements ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  list-style: none !important;
+  text-align: left;
+  padding-left: 1.2em !important;
+  margin-left: 0 !important;
+}
+
+.education-achievements li {
+  padding-left: 1.2em !important;
+  text-indent: 0 !important;
+  margin-left: 0 !important;
 }
 
 .education-achievements li {
@@ -519,4 +552,11 @@
     flex-direction: column;
     text-align: center;
   }
+} 
+
+.education-section .category-icon,
+.education-section .category-icon h3,
+.education-section .category-icon + h3,
+.education-section .category-icon ~ h3 {
+  color: #000 !important;
 } 
