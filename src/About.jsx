@@ -21,11 +21,11 @@ const About = () => {
       'Selenium WebDriver', 'JUnit/TestNG', 'Postman', 'JMeter', 'LoadRunner',
       'JIRA', 'Confluence', 'TestRail', 'Bugzilla', 'Git/GitHub',
       'Jenkins CI/CD', 'Docker', 'AWS/Azure', 'VMware', 'Remote Desktop',
-      'TeamViewer', 'ServiceNow', 'Zendesk', 'Slack', 'Microsoft Teams'
+      'TeamViewer', 'ServiceNow', 'Zendesk', 'Slack', 'Microsoft Teams',
+      'Windows', 'Linux', 'Mac OS', 'VirtualBox'
     ],
     programming: [
-      'JavaScript', 'Python', 'Java', 'SQL', 'HTML/CSS', 'React', 'Node.js',
-      'REST APIs', 'JSON/XML', 'Shell Scripting', 'PowerShell', 'Batch Scripting'
+      'Python', 'Java', 'C', 'SQL', 'HTML/CSS', 'REST APIs', 'JSON/XML', 'PowerShell',
     ],
     soft: [
       'Problem Solving', 'Analytical Thinking', 'Team Collaboration', 'Communication',
@@ -49,62 +49,52 @@ const About = () => {
     },
     {
       title: 'Technical Support Specialist',
-      company: 'Tech Solutions Inc.',
-      period: '2022 - Present',
-      description: 'Providing comprehensive technical support and troubleshooting for software applications, hardware issues, and network connectivity problems. Managing customer inquiries through multiple channels and ensuring optimal system performance.',
+      company: 'Sutherland Global Service',
+      period: 'January 2021 – May 2022',
+      description: 'Provided Tier 2 support for Amazon Seller Central, resolving 50+ weekly tickets related to API integration errors, account configurations, and backend connectivity issues with a 95% SLA compliance rate.',
       achievements: [
-        'Resolved 95% of customer issues within SLA timeframes with 98% customer satisfaction',
-        'Implemented automated testing processes reducing bug reports by 40%',
-        'Mentored junior team members and created knowledge base documentation',
-        'Managed 50+ daily support tickets across multiple platforms'
+        'Investigated and troubleshot multi-system workflows including inventory sync, payment processing delays, and listing optimization failures.',
+        'Collaborated with engineering teams for critical issue escalation, creating logs and reproducible case reports.',
+        'Authored and updated internal documentation and knowledge base articles to streamline future resolutions.',
+        'Delivered interim solutions and technical workarounds to minimize downtime and maintain business continuity for sellers.'
       ]
     },
     {
-      title: 'Software Testing Specialist',
-      company: 'Quality Assurance Corp.',
-      period: '2021 - 2022',
-      description: 'Conducted comprehensive software testing including manual and automated testing procedures for web applications, mobile apps, and API endpoints.',
+      title: 'Technical Trainer',
+      company: 'Karunya Institute of Technology and Science',
+      period: 'September 2017 – January 2020',
+      description: 'Taught AutoCAD 2D/3D drafting as the main tool for creating mechanical designs, including dimensioning, tolerancing, and layout standards.',
       achievements: [
-        'Developed and executed 200+ test cases covering functional, regression, and performance testing',
-        'Automated 60% of regression testing processes using Selenium and TestNG',
-        'Improved test coverage by 35% and reduced bug escape rate by 25%',
-        'Performed API testing using Postman and JMeter for performance validation'
-      ]
-    },
-    {
-      title: 'Junior Developer & QA Tester',
-      company: 'Startup Innovations',
-      period: '2020 - 2021',
-      description: 'Contributed to full-stack development projects with focus on testing and quality assurance. Provided technical support for internal tools and applications.',
-      achievements: [
-        'Built and maintained REST APIs with comprehensive testing coverage',
-        'Implemented CI/CD pipelines with automated testing integration',
-        'Provided technical support for internal development tools and applications',
-        'Collaborated on agile development teams with focus on quality assurance'
+        'Used Python and C alongside AutoCAD to automate calculations, such as stress analysis, fit checks, and batch drawing updates.',
+        'Designed projects where students combined AutoCAD modeling with Python/C scripts for engineering problem-solving and design validation.',
+        'Assisted with computer lab setup and maintenance, including OS installation, driver configuration, and hardware upgrades.'
       ]
     }
   ];
 
   const education = [
     {
-      degree: 'Bachelor of Computer Science',
-      school: 'Western University',
-      period: '2016 - 2020',
-      description: 'Specialized in Software Engineering with focus on testing methodologies and quality assurance.'
+      degree: 'Software and Information Systems Testing (Co-op)',
+      school: 'Fanshawe College',
+      period: 'September 2022 – April 2023'
     },
     {
-      degree: 'Software Testing Certification',
-      school: 'ISTQB',
-      period: '2021',
-      description: 'Certified Tester Foundation Level (CTFL) with expertise in test design and execution.'
+      degree: 'Master of Engineering (M.Eng) in Mechanical Engineering',
+      school: 'Karunya Institute of Technology and Science (KITS)',
+      period: 'July 2013 - April 2015'
+    },
+    {
+      degree: 'Bachelor’s in Mechanical Engineering',
+      school: 'CCET',
+      period: '2009 – 2013'
     }
   ];
 
   const certifications = [
-    'ISTQB Certified Tester Foundation Level (CTFL)',
-    'AWS Certified Cloud Practitioner',
-    'Microsoft Azure Fundamentals',
-    'Selenium WebDriver Certification'
+    'CompTIA A+',
+    'CompTIA Network+',
+    'CompTIA Security+',
+    'Google IT Support Professional Certificate'
   ];
 
   return (
@@ -222,8 +212,7 @@ const About = () => {
                   <div key={index} className="education-item">
                     <h5>{edu.degree}</h5>
                     <p className="education-school">{edu.school}</p>
-                    <p className="education-period">{edu.period}</p>
-                    <p className="education-description">{edu.description}</p>
+                    <p className="education-period" style={{ textAlign: 'center', margin: 0 }}>{edu.period}</p>
                   </div>
                 ))}
               </div>

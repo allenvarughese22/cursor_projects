@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaHeadset, FaBug, FaShieldAlt, FaCogs, FaUsers, FaRocket } from 'react-icons/fa';
+import { FaHeadset, FaBug, FaShieldAlt, FaCogs, FaUsers, FaRocket, FaCode } from 'react-icons/fa';
 import './WhatIDo.css';
 import './design-system.css';
 
@@ -18,10 +18,16 @@ const WhatIDo = () => {
       features: ["Manual Testing", "Automated Testing", "API Testing", "Performance Testing"]
     },
     {
-      icon: <FaShieldAlt />,
-      title: "Security & Networks",
-      description: "CompTIA certified infrastructure and security expert with advanced cybersecurity skills.",
-      features: ["Network Security", "Cybersecurity", "Infrastructure", "Compliance"]
+      icon: <FaCode />,
+      title: "Software Development",
+      description: "Experienced in modern software engineering with a focus on robust, scalable solutions.",
+      features: [
+        "Python & Java Development",
+        "Web & API Engineering",
+        "Automation & Scripting",
+        "Industrial Systems Integration",
+        "Agile & DevOps Practices"
+      ]
     }
   ];
 
