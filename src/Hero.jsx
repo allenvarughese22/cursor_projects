@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { FaLinkedin, FaGithub, FaEnvelope, FaDownload } from 'react-icons/fa';
+import { SiLeetcode } from 'react-icons/si';
 import './Hero.css';
 import './design-system.css';
 import profilePhoto from '../my photo.png';
@@ -39,8 +40,7 @@ const Hero = () => {
 
   const titles = [
     'Technical Support Specialist',
-    'QA Specialist',
-    'IT Infrastructure Expert'
+     'IT Infrastructure Expert'
   ];
 
   const handleDownloadResume = () => {
@@ -113,6 +113,9 @@ const Hero = () => {
               </a>
               <a href="mailto:allenvarughese22@gmail.com" aria-label="Email">
                 <FaEnvelope />
+              </a>
+              <a href="https://leetcode.com/u/allenvarughese22/" target="_blank" rel="noopener noreferrer" aria-label="LeetCode">
+                <SiLeetcode />
               </a>
             </div>
 

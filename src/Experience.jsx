@@ -106,16 +106,6 @@ const Experience = () => {
           </p>
         </div>
 
-        <div className="experience-stats">
-          {stats.map((stat, index) => (
-            <div key={index} className="stat-card">
-              <div className="stat-icon">{stat.icon}</div>
-              <div className="stat-number">{stat.number}</div>
-              <div className="stat-label">{stat.label}</div>
-            </div>
-          ))}
-        </div>
-
         <div className="experience-timeline">
           {experience.map((exp, index) => (
             <div key={index} className="timeline-item">
