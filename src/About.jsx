@@ -110,7 +110,7 @@ const About = () => {
       period: 'July 2013 - April 2015'
     },
     {
-      degree: 'Bachelor’s in Mechanical Engineering',
+      degree: 'Bachelor\'s in Mechanical Engineering',
       school: 'CCET',
       period: '2009 – 2013'
     }

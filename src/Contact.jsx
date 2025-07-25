@@ -221,9 +221,9 @@ const Contact = () => {
         {/* Remove the contact-footer section and add a haiku poem */}
         <div className="contact-quote">
           <blockquote>
-            <p>In quiet moments<br />
-            Connections bloom, hearts open<br />
-            New journeys begin</p>
+            <p>Through storms we rise high<br />
+            Innovation lights the way<br />
+            Failure fuels success</p>
             <footer>— Haiku</footer>
           </blockquote>
         </div>
