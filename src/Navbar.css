@@ -33,6 +33,14 @@
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
+.nav-brand a {
+  color: #DC143C !important;
+  text-decoration: none;
+  font-size: 2.2rem;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+}
+
 .nav-links {
   display: flex;
   list-style: none;

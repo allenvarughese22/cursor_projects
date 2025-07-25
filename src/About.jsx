@@ -39,36 +39,62 @@ const About = () => {
       title: 'Software Quality Analyst',
       company: 'Info-Tech Research Group',
       period: 'May 2023 – September 2023',
+      location: 'London, Ontario',
+      type: 'Full-time',
       description: 'Developed comprehensive test cases for web applications, ensuring cross-browser compatibility and system functionality.',
       achievements: [
         'Collaborated with Agile development teams to identify defects, conduct root cause analysis, and verify technical solutions.',
         'Utilized JIRA ticketing system for issue tracking, escalation, and resolution documentation.',
         'Executed API testing using REST APIs and Postman, validating system integrations and data integrity.',
         'Created automated solutions using Java and Selenium WebDriver, improving testing efficiency and accuracy.'
-      ]
+      ],
+      technologies: ['Java', 'Selenium WebDriver', 'JIRA', 'Postman', 'REST APIs']
     },
     {
       title: 'Technical Support Specialist',
       company: 'Sutherland Global Service',
       period: 'January 2021 – May 2022',
+      location: 'Kerala, India',
+      type: 'Full-time',
       description: 'Provided Tier 2 support for Amazon Seller Central, resolving 50+ weekly tickets related to API integration errors, account configurations, and backend connectivity issues with a 95% SLA compliance rate.',
       achievements: [
         'Investigated and troubleshot multi-system workflows including inventory sync, payment processing delays, and listing optimization failures.',
         'Collaborated with engineering teams for critical issue escalation, creating logs and reproducible case reports.',
         'Authored and updated internal documentation and knowledge base articles to streamline future resolutions.',
         'Delivered interim solutions and technical workarounds to minimize downtime and maintain business continuity for sellers.'
-      ]
+      ],
+      technologies: ['Amazon Seller Central', 'API Integration', 'Knowledge Base', 'Ticketing Systems']
     },
     {
       title: 'Technical Trainer',
       company: 'Karunya Institute of Technology and Science',
       period: 'September 2017 – January 2020',
+      location: 'India',
+      type: 'Full-time',
       description: 'Taught AutoCAD 2D/3D drafting as the main tool for creating mechanical designs, including dimensioning, tolerancing, and layout standards.',
       achievements: [
         'Used Python and C alongside AutoCAD to automate calculations, such as stress analysis, fit checks, and batch drawing updates.',
         'Designed projects where students combined AutoCAD modeling with Python/C scripts for engineering problem-solving and design validation.',
         'Assisted with computer lab setup and maintenance, including OS installation, driver configuration, and hardware upgrades.'
-      ]
+      ],
+      technologies: ['AutoCAD', 'Python', 'C', 'Windows OS', 'Computer Hardware']
+    }
+  ];
+
+  const additionalExperience = [
+    {
+      title: 'Injection Molding Operator',
+      company: 'Cooper Standard',
+      location: 'Stratford, Ontario, Canada',
+      period: 'May 2024 – Present',
+      description: 'Manufactured automotive components using injection molding and extrusion, ensuring quality standards, meeting production targets, and collaborating to streamline processes.'
+    },
+    {
+      title: 'Warehouse Associate',
+      company: 'Columbia Sportswear Warehouse',
+      location: 'London, Ontario, Canada',
+      period: 'June 2022 – October 2022',
+      description: 'Operated equipment and ensured 100% order accuracy in a fast-paced warehouse environment.'
     }
   ];
 
@@ -110,10 +136,10 @@ const About = () => {
                           <div className="about-text">
                 <h3>Professional Summary</h3>
                 <p>
-                  Technical Support & QA Specialist with real-world experience in troubleshooting, bug tracking, and root cause analysis. Certified in the CompTIA trifecta (A+, Network+, Security+), and fluent in tools like JIRA, Postman, and Agile workflows.
+                  Technical Support Specialist with deep expertise in troubleshooting, customer support, and IT systems management. Specialized in resolving complex technical issues, remote desktop support, and ensuring seamless user experiences across diverse environments. Certified in the CompTIA trifecta (A+, Network+, Security+), and highly proficient with tools like JIRA, Postman, and remote support platforms.
                 </p>
                 <p>
-                  Quick learner with working knowledge of Java, Python, SQL, and Linux. Tech-savvy, adaptable, and always eager to grow—ready to bring value to modern IT and support teams.
+                  Also experienced in software QA and development, with working knowledge of Java, Python, SQL, and Linux. Adaptable, tech-savvy, and committed to continuous learning—ready to deliver value to modern IT and support teams, with a strong foundation in both technical support and software solutions.
                 </p>
               </div>
             <div className="about-stats">
@@ -176,30 +202,6 @@ const About = () => {
                   ))}
                 </div>
               </div>
-            </div>
-          </div>
-
-          <div className="experience-section">
-            <h3>Professional Experience</h3>
-            <div className="timeline">
-              {experience.map((exp, index) => (
-                <div key={index} className="timeline-item">
-                  <div className="timeline-marker"></div>
-                  <div className="timeline-content">
-                    <div className="timeline-header">
-                      <h4>{exp.title}</h4>
-                      <span className="timeline-company">{exp.company}</span>
-                      <span className="timeline-period">{exp.period}</span>
-                    </div>
-                    <p className="timeline-description">{exp.description}</p>
-                    <ul className="timeline-achievements">
-                      {exp.achievements.map((achievement, idx) => (
-                        <li key={idx}>{achievement}</li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-              ))}
             </div>
           </div>
 
