@@ -26,12 +26,28 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
-    setTimeout(() => {
+    // Send to Formspree
+    fetch('https://formspree.io/f/mjkowedd', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(formData)
+    })
+    .then(response => {
+      if (response.ok) {
+        setIsSubmitting(false);
+        setFormData({ name: '', email: '', subject: '', message: '' });
+        alert('Thank you for your message! I will get back to you soon.');
+      } else {
+        throw new Error('Network response was not ok');
+      }
+    })
+    .catch(error => {
       setIsSubmitting(false);
-      setFormData({ name: '', email: '', subject: '', message: '' });
-      alert('Thank you for your message! I will get back to you soon.');
-    }, 2000);
+      alert('Error sending message. Please try again.');
+      console.error('Error:', error);
+    });
   };
 
   const contactInfo = [

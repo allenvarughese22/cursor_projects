@@ -143,23 +143,8 @@ const Skills = () => {
           ))}
         </div>
 
-        <div className="skills-summary">
-          <div className="summary-card">
-            <FaRocket className="summary-icon" />
-            <h3>Technical Support Expertise</h3>
-            <p>15+ skills in customer service, troubleshooting, and system administration</p>
-          </div>
-          <div className="summary-card">
-            <FaBug className="summary-icon" />
-            <h3>Software Testing Mastery</h3>
-            <p>18+ testing methodologies and tools for comprehensive quality assurance</p>
-          </div>
-          <div className="summary-card">
-            <FaUsers className="summary-icon" />
-            <h3>Teamwork & Collaboration</h3>
-            <p>Known for positive energy, adaptability, and building strong relationships across teams. Engaging communicator who values knowledge sharing and a supportive work culture.</p>
-          </div>
-        </div>
+        {/* Removed skills-summary section */}
+
       </div>
     </section>
   );

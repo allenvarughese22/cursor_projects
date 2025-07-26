@@ -4,6 +4,11 @@ import './Navbar.css';
 import './design-system.css';
 
 const Navbar = () => {
+  const handleHomeClick = () => {
+    // Scroll to top when AV logo is clicked
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <nav className="navbar-tesla" role="navigation" aria-label="Main navigation">
       <div className="container">
@@ -13,7 +18,7 @@ const Navbar = () => {
           role="button"
           aria-label="Go to homepage"
         >
-          <Link to="/">AV</Link>
+          <Link to="/" onClick={handleHomeClick}>AV</Link>
         </div>
         <ul className="nav-links">
           <li><Link to={{ pathname: '/', search: '?section=what-i-do' }} aria-label="Go to what I do section">What I Do</Link></li>
